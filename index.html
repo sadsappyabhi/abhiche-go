@@ -14,22 +14,20 @@
 </head>
 
 <body>
-  <header>
-    <div class="flex">
-      <a href="/" class="active">abhilasha chebolu</a>
-      <!-- nav links (hidden by default) -->
-      <div id="navLinks" class="hidden">
-        <a href="/bio">Bio</a>
-        <a href="/null-copula">Null Copula</a>
-        <a href="/turtle-boat">Turtle Boat</a>
-        <a href="/recordings">Recordings</a>
-        <a href="/performances">Performances</a>
-        <a href="/contact">Contact / Links</a>
-      </div>
-      <!-- Hamburger menu / icon to toggle nav links -->
-      <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
-        <i class="fa fa-bars"></i>
-      </a>
+  <header class="flex items-center justify-between p-4">
+    <a href="/" class="text-lg font-bold">abhilasha chebolu</a>
+    <!-- Hamburger menu / icon to toggle nav links -->
+    <a href="javascript:void(0);" class="icon md:hidden" onclick="toggleNav()">
+      <i class="fa fa-bars"></i>
+    </a>
+    <!-- nav links (hidden by default) -->
+    <div id="navLinks" class="hidden md:flex space-x-4">
+      <a href="/bio">Bio</a>
+      <a href="/null-copula">Null Copula</a>
+      <a href="/turtle-boat">Turtle Boat</a>
+      <a href="/recordings">Recordings</a>
+      <a href="/performances">Performances</a>
+      <a href="/contact">Contact / Links</a>
     </div>
   </header>
 
