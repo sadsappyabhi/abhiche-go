@@ -9,14 +9,28 @@
   <link href="https://fonts.cdnfonts.com/css/nimbus-sans-l" rel="stylesheet">
   <link rel="shortcut icon" href="./public/img/White-noise-180x180.png" type="image/x-icon">
   <link href="styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@unocss/runtime"></script>
 </head>
 
 <body>
   <header>
-    <h1>abhilasha chebolu</h1>
-    <nav>
-
-    </nav>
+    <div>
+      <a href="/" class="active">abhilasha chebolu</a>
+      <!-- nav links (hidden by default) -->
+      <div id="navLinks">
+        <a href="/bio">Bio</a>
+        <a href="/null-copula">Null Copula</a>
+        <a href="/turtle-boat">Turtle Boat</a>
+        <a href="/recordings">Recordings</a>
+        <a href="/performances">Performances</a>
+        <a href="/contact">Contact / Links</a>
+      </div>
+      <!-- Hamburger menu / icon to toggle nav links -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
   </header>
 
   <div id="content">
