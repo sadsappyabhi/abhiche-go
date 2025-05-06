@@ -15,10 +15,10 @@
 
 <body>
   <header>
-    <div>
+    <div class="flex">
       <a href="/" class="active">abhilasha chebolu</a>
       <!-- nav links (hidden by default) -->
-      <div id="navLinks">
+      <div id="navLinks" class="hidden">
         <a href="/bio">Bio</a>
         <a href="/null-copula">Null Copula</a>
         <a href="/turtle-boat">Turtle Boat</a>
@@ -27,7 +27,7 @@
         <a href="/contact">Contact / Links</a>
       </div>
       <!-- Hamburger menu / icon to toggle nav links -->
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
         <i class="fa fa-bars"></i>
       </a>
     </div>
@@ -36,6 +36,17 @@
   <div id="content">
     <!-- content from nav menu to be loaded here -->
   </div>
+
+  <script>
+    function toggleNav() {
+      let x = document.getElementById("navLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
 </body>
 
 </html>
